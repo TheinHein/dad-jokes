@@ -1,0 +1,87 @@
+.Jokes {
+  font-family: "Gluten", cursive;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.left {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.5em;
+  height: 80vh;
+  border-radius: 15px 0 0 15px;
+  color: tomato;
+  background-color: bisque;
+  box-shadow: 4px 4px 4px rgba(37, 13, 13, 0.7), 4px 2px 2px rgb(225, 225, 225);
+}
+
+.logo {
+  font-size: 3em;
+  margin-bottom: 35px;
+  border: 5px solid;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 130px;
+  box-shadow: 3px 3px 3px rgba(37, 13, 13, 1), -3px -3px 3px rgba(37, 13, 13, 1);
+}
+.newJokes-btn {
+  font-family: "Gluten", cursive;
+  cursor: pointer;
+  color: bisque;
+  font-size: 0.5em;
+  border: outset 2px rgb(238, 125, 105);
+  border-radius: 10px;
+  background-color: rgb(255, 99, 71);
+  padding: 5px 15px;
+  box-shadow: 2px 2px 0.8px rgba(37, 13, 13, 1);
+  outline: none;
+}
+.newJokes-btn:hover {
+  border: inset 3px rgb(238, 125, 105);
+  outline: none;
+}
+.loading {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: rgba(238, 125, 105, 0.7);
+  font-size: 3em;
+}
+
+.show {
+  display: flex;
+  border-bottom: 1px solid rgba(45, 45, 40, 0.5);
+  margin: 0 -1em;
+  padding: 0 1em;
+}
+.showContainer {
+  overflow-y: scroll;
+  height: 70vh;
+  align-self: center;
+  background-color: tomato;
+  color: bisque;
+  border: 10px double bisque;
+  border-left: none;
+  border-radius: 0 15px 15px 0;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 4px rgba(37, 13, 13, 0.7), 4px 2px 2px rgb(225, 225, 225);
+}
+
+@media (max-width: 800px) {
+  .Jokes {
+    flex-direction: column;
+    height: 80vh;
+  }
+  .left {
+    border-radius: 15px 15px 0 0px;
+  }
+  .showContainer {
+    border-radius: 0 0px 15px 15px;
+    border: 10px double bisque;
+    border-top: none;
+  }
+}
